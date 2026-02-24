@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Bio Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --accent-color: #ff758c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: var(--primary-gradient) !important;
+            padding: 1rem 0;
+            transition: all 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 100px 0;
+            border-radius: 0 0 50% 50% / 20px;
+            margin-bottom: -50px;
+        }
+
+        /* Card Decoration */
+        .card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-gradient);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Section Spacing */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 5px;
+            background: var(--accent-color);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #2d3436;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#"><i class="fas fa-code me-2"></i>MyBrand</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input class="form-control border-0" type="search" placeholder="Cari sesuatu...">
+                        <button class="btn btn-light text-primary" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero text-center" id="home">
+        <div class="container">
+            <img src="2.jpg" class="img-fluid rounded-circle" alt="Profil">
+
+            <h1 class="display-4 fw-bold">Halo, Saya [Marvin hendika]</h1>
+            <p class="lead mb-4">UI/UX Designer & Fullstack Developer Berbasis di Indonesia</p>
+            <div class="d-flex justify-content-center gap-3">
+                <button class="btn btn-light btn-lg px-4 rounded-pill fw-bold">Download CV</button>
+                <button class="btn btn-outline-light btn-lg px-4 rounded-pill">Hire Me</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow p-4">
+                        <div class="card-body">
+                            <h3 class="section-title">Biodata Lengkap</h3>
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3">
+                                    <p class="text-muted mb-1">Nama Lengkap</p>
+                                    <h6 class="fw-bold">Marvin hendika</h6>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <p class="text-muted mb-1">Email</p>
+                                    <h6 class="fw-bold">vinn@example.com</h6>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <p class="text-muted mb-1">Pekerjaan</p>
+                                    <h6 class="fw-bold">Web Developer</h6>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <p class="text-muted mb-1">Lokasi</p>
+                                    <h6 class="fw-bold">Sukatani, Bekasi</h6>
+                                </div>
+                            </div>
+                            <hr>
+                            <p class="text-center italic mt-3">"Berusaha memberikan solusi digital terbaik untuk setiap tantangan teknologi yang ada."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Apa Yang Saya Lakukan</h2>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 text-center shadow-sm">
+                        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Web Dev</h4>
+                        <p class="text-muted">Membangun website responsif dengan teknologi terbaru.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 text-center shadow-sm">
+                        <div class="icon-box"><i class="fas fa-mobile-alt"></i></div>
+                        <h4>Mobile App</h4>
+                        <p class="text-muted">Desain aplikasi Android dan iOS yang user-friendly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 text-center shadow-sm">
+                        <div class="icon-box"><i class="fas fa-paint-brush"></i></div>
+                        <h4>UI/UX Design</h4>
+                        <p class="text-muted">Membuat tampilan visual yang memanjakan mata pengguna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h3 class="mb-4">Mari Terhubung!</h3>
+            <div class="fs-2 mb-4">
+                <a href="#" class="text-white mx-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="mb-0">&copy; @alwaysvinn19</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
